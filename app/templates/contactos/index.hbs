@@ -1,0 +1,8 @@
+<h1>Los contactos pokémon</h1>
+{{#link-to 'contactos.new'}}
+<button>Crear pokemon</button>
+{{/link-to}}
+{{#each model as |pokemon|}}
+	<p>{{link-to pokemon.nombre 'contactos.show' pokemon}}</p>
+{{/each}}
+{{outlet}}
