@@ -1,0 +1,29 @@
+{{model.nombre}}
+{{model.nivel}}
+
+<form {{action 'guardar' on='submit'}} >
+
+<p>
+	<label>Nombre:
+		{{input value=model.nombre}}
+	</label>
+</p>
+<p>
+	<label>Equipo:
+		{{input value=model.equipo}}
+	</label>
+</p>
+<p>
+	<label>Tipo:
+		{{input value=model.tipo}}
+	</label>
+</p>
+<p>
+	<label>Nivel:
+		{{input value=model.nivel}}
+	</label>
+</p>
+<input type="submit" value="Guardar">
+<button {{action 'cancel'}} >Cancelar</button>
+
+</form>
